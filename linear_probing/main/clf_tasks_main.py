@@ -1006,7 +1006,7 @@ if __name__ == "__main__":
     hostname = socket.gethostname()
     if hostname == "hemingway":
         print(f"Running on {hostname}")
-        args.data_root = "/mnt/Data/SSHFS/msc_server/FullVIBES-v2/Downstream_datasets/"
+        args.data_root = "/path/to/data"
         args.batch_size = 2
 
     args.data_path = args.data_root + args.data_set
