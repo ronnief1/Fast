@@ -23,7 +23,7 @@ updated_params = OrderedDict({name.replace(replace_name, ''): param for name, pa
 
 model_version = args.path_to_model.split('/')[1]
 
-torch.save(updated_params, '../linearprobing/_weights/' + args.path_to_model.rsplit('/', 1)[-1].split('.')[0] + '_' + model_version + file_suffix)
+torch.save(updated_params, '../linear_probing/_weights/' + args.path_to_model.rsplit('/', 1)[-1].split('.')[0] + '_' + model_version + file_suffix)
 
 
 
