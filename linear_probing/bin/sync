@@ -12,12 +12,12 @@ option = sys.argv[1]
 
 
 if option == "hpc":
-    target_dir = "jmoran82@s0-l00.hpc.meduniwien.ac.at:/msc/home/jmoran82/MultiOptiMAE_downstream/classification_tasks/"
+    target_dir = "path/to/data"
     extra_exclusions = {
         "run_slurm.sh",
     }
 elif option == "cir":
-    target_dir = "jsanchez@on3.cir.meduniwien.ac.at:/home/optima/jsanchez/MultiOptiMAE_downstream/classification_tasks/"
+    target_dir = "path/to/data"
     extra_exclusions = {
         "run_slurm_msc.sh",
     }
