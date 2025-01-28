@@ -18,9 +18,9 @@ import numpy as np
 
 
 if socket.gethostname() == 'hemingway':
-    sys.path.append('/run/media/morano/SW1000/OPTIMA/Source/foundation_model/MultiOptiMAE.git/main/multimae/')
+    sys.path.append('path')
 elif socket.gethostname().startswith('s0-'):
-    sys.path.append('/msc/home/jmoran82/MultiOptiMAE_torch1/multimae/')
+    sys.path.append('path')
 else:
     raise ValueError('Unknown host')
 
