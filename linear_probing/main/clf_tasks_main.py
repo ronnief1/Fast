@@ -155,7 +155,7 @@ def get_args_parser():
     # * Dataset parameters
     parser.add_argument(
         "--data_root",
-        default="/msc/home/jmoran82/FullVIBES-v2/Downstream_datasets/",
+        default="/path/to/data",
         type=str,
         help="dataset path",
     )
