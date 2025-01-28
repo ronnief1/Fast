@@ -8,31 +8,18 @@ import torch
 
 
 def image_loading(scan):
-    full_scan = np.load('../../../jmoran82/FullVIBES-v2/bscan/' + scan + '.npy')#, allow_pickle=True, mmap_mode='r')
+    full_scan = np.load('path/to/scan')#, allow_pickle=True, mmap_mode='r')
 
     image = to_min_max_norm_tensor(full_scan)
 
     return image    
 
 def image_loading_255(scan):
-    full_scan = np.load('../../../jmoran82/FullVIBES-v2/bscan/' + scan + '.npy')#, allow_pickle=True, mmap_mode='r')
+    full_scan = np.load('path/to/scan')#, allow_pickle=True, mmap_mode='r')
 
     image = to_255_norm_tensor(full_scan)
 
     return image  
-
-def image_no_norm(scan):
-    full_scan = np.load('../../../jmoran82/FullVIBES-v2/bscan/' + scan + '.npy')#, allow_pickle=True, mmap_mode='r')
-
-    return torch.tensor(full_scan).unsqueeze(0).float()
-
-def slo_loading(scan):
-    full_scan = np.load('../../../jmoran82/FullVIBES-v2/slo/' + scan + '.npy')#, allow_pickle=True, mmap_mode='r')
-
-    image = to_min_max_norm_tensor(full_scan)
-
-    return image    
-
 
 DOMAIN_CONF = {
     'bscan': {
