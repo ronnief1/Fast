@@ -1,0 +1,63 @@
+# GOALS semseg config
+
+# Finetune from:
+finetune: './_weights/v3_multimae-l_pret-multimae_98_1600e_bscan-slo-bscanlayermap_512-128--32-8_shuffle_checkpoint-1599.pth'
+
+# Input tasks
+in_domains: bscan
+
+mapping:
+  0: 0
+  80: 1
+  160: 2
+  255: 3
+
+# Architecture
+model: multivit_large
+patch_size:
+  bscan: [32, 32]
+num_global_tokens: 1
+drop_path_encoder: 0.1
+output_adapter: convnext
+decoder_main_tasks: bscan
+decoder_dim: 6144
+decoder_preds_per_patch: 16
+decoder_depth: 4
+
+# Train
+epochs: 200
+opt: adamw
+lr: 0.0001 # = 1e-4
+warmup_lr: 0.000001 # = 1e-6
+min_lr: 0.
+warmup_epochs: 1
+batch_size: 2
+input_size:
+  bscan: [1024, 1024]
+layer_decay: 0.75
+
+# Augmentation
+aug_name: simple
+
+# Data info
+data_path: '/msc/home/jmoran82/FullVIBES-v2/Downstream_seg_datasets/GOALS/train'
+eval_data_path: '/msc/home/jmoran82/FullVIBES-v2/Downstream_seg_datasets/GOALS/val'
+# test_data_path: '/msc/home/jmoran82/FullVIBES-v2/Downstream_seg_datasets/GOALS/Standard_test_images'
+num_classes: 4
+dataset_name: GOALS
+seg_reduce_zero_label: False
+dist_eval: False
+eval_freq: 1
+log_images: False
+
+# Misc.
+find_unused_params: False
+
+# Wandb and logging
+log_wandb: False # Set to True to log to Weights & Biases
+wandb_project: 'multimae-finetune-semseg'
+wandb_entity: null # Change if needed
+wandb_run_name: 'ft_goals_200e_multimae-l_bscan'
+log_images_wandb: False
+log_images_freq: 20
+output_dir: 'output/finetune/semseg/GOALS/ft_goals_200e_multimae-l_bscan'
