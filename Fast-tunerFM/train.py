@@ -15,7 +15,7 @@ parser.add_argument('--lr', type=float, default=0.0001)
 parser.add_argument('--losses', nargs='+', type=str, default=None)
 parser.add_argument('--batch_size', type=int, default=128)
 parser.add_argument('--note', type=str, default='')
-parser.add_argument('--model_weights', type=str, default='../../v3_multimae-b_pret-multimae_49_1600e_bscan_512-32_checkpoint-1599.pth')
+parser.add_argument('--model_weights', type=str, default='')
 
 args, unknown = parser.parse_known_args()
  
