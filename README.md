@@ -2,7 +2,7 @@
 
 ## Fine-tuning
 
-Create a new virtual in Fast-tunerFM/ and install requirements.txt
+Create a new virtual environment in Fast-tunerFM/ and install requirements.txt
 
 Text encoder weights: Download BERT weights here and put them under Fast-tunerFM/pretrained_weights/: https://drive.google.com/file/d/1_yvgtR5ZcWxJbMpWn4v2_Tgg4TI4d5oh/view?usp=sharing  
 
