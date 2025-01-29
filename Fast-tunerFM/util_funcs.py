@@ -310,7 +310,7 @@ def get_data_loaders(model_weights, args):
         val_loader = DataLoader(val_dataset, batch_size=args.batch_size, collate_fn=collate_fn, shuffle=False, num_workers=10) #Define your own dataloader
         
     else:
-        raise ValueError("Undefined vision backbone. Don't know how to load. Add your vision model loading code to util_funcs.py in the function load_vision_backbone.")
+        raise ValueError("Undefined vision backbone. Don't know how to load. Add your data loader code to util_funcs.py in the function get_data_loaders.")
 
 
     return train_loader, val_loader
