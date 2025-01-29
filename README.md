@@ -5,7 +5,7 @@ Download BERT weights here and put them under Fast-tunerFM/pretrained_weights/: 
 Put your vision model in Fast-tunerFM/  
 
 ```sh
-test
+python train.py --model_weights path/to/model
 ```
 
 ## SOTA Fine-tuned weights
