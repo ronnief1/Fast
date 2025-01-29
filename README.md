@@ -28,6 +28,9 @@ Once your model is trained, run the following script to extract the vision backb
 python get_vision_backbone_for_linprobing.py --path_to_model models/<model name>
 ```
 
+## Linear probing
+
+Once you have your fine-tuned model, navigate into linear_probing and set up a new virtual environment there. Then install requirements.txt.
 
 ## Downstream classification datasets
 Duke iAMD: https://people.duke.edu/~sf59/RPEDC_Ophth_2013_dataset.htm  
