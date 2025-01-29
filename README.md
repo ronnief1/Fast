@@ -1,10 +1,11 @@
 # Fast-tunerFM: An Efficient Vision-Language Fine-tuning Scheme for Medical Foundation Models
 
 ## Fine-tuning
-Download BERT weights here and put them under Fast-tunerFM/pretrained_weights/: https://drive.google.com/file/d/1_yvgtR5ZcWxJbMpWn4v2_Tgg4TI4d5oh/view?usp=sharing  
+Text encoder weights: Download BERT weights here and put them under Fast-tunerFM/pretrained_weights/: https://drive.google.com/file/d/1_yvgtR5ZcWxJbMpWn4v2_Tgg4TI4d5oh/view?usp=sharing  
 
-Put your vision model in Fast-tunerFM/  
+Vision encoder weights: Put your vision model in Fast-tunerFM/  
 
+Then in the command line run:
 ```sh
 python train.py --model_weights path/to/model
 ```
