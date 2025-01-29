@@ -7,6 +7,7 @@ Fine-tuned weights for VisionFM: https://drive.google.com/file/d/1KPxULUnhiU0Irl
 
 
 ## Fine-tuning
+If you want to run our fine-tuning scheme on your vision model:
 
 Navigate into Fast-tunerFM/
 
