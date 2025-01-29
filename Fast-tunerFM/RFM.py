@@ -58,9 +58,9 @@ class Match_head(nn.Module):
 
 class RFM(nn.Module):
     def __init__(self, 
-                 vision_weights_path='../../v3_multimae-b_pret-multimae_49_1600e_bscan_512-32_checkpoint-1599.pth', 
-                 bert_weights='../../VLM/COSA_own/pretrained_weights/BERT/bert-base-uncased-crossattn',
-                 tokenizer_weights='../../VLM/COSA_own/pretrained_weights/BERT/tokenizer',
+                 vision_weights_path='path/to/model', 
+                 bert_weights='pretrained_weights/BERT/bert-base-uncased-crossattn',
+                 tokenizer_weights='pretrained_weights/BERT/tokenizer',
                  temperature=0.07,
                  exp_temp=False,
                  loss_weights={loss: 1 for loss in ["mlm", "gm", "itm", "itc"]}
