@@ -37,7 +37,7 @@ Then you can run one of the .sh scripts based on which model you have.
 
 For example, in retfound.sh, you would change the ft_weights arg to _weights/<my_model_name>. Adjust the data sets arg accordingly.
 
-## Downstream classification datasets
+## Linear probing datasets
 Duke iAMD: https://people.duke.edu/~sf59/RPEDC_Ophth_2013_dataset.htm  
 Harvard Glaucoma: https://github.com/Harvard-Ophthalmology-AI-Lab/Harvard-GDP  
 Noor Eye Hospital: https://hrabbani.site123.me/available-datasets/dataset-for-oct-classification-50-normal-48-amd-50-dme  
