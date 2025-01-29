@@ -2,6 +2,8 @@
 
 ## Fine-tuning
 
+Navigate into Fast-tunerFM/
+
 Create a new virtual environment in Fast-tunerFM/ and install requirements.txt
 
 Text encoder weights: Download BERT weights here and put them under Fast-tunerFM/pretrained_weights/: https://drive.google.com/file/d/1_yvgtR5ZcWxJbMpWn4v2_Tgg4TI4d5oh/view?usp=sharing  
@@ -13,6 +15,11 @@ Our in-house training data is private so you will need to use your own. Edit Fas
 Then in the command line run:
 ```sh
 python train.py --model_weights path/to/model
+```
+
+Once your model is trained, run the following script to extract the vision backbone. This will save it under linear_probing/_weights. Note this has only been tested on RETFound, VisionFM, Uni4Eye++, and our in-house MAE. You may need to alter it for another FM.
+```sh
+python get_vision_backbone_for_linprobing.py --path_to_model models/<model name>
 ```
 
 ## SOTA Fine-tuned weights
