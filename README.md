@@ -2,7 +2,6 @@
 
 ## Fine-tuning
 Download BERT weights here and put them under Fast-tunerFM/pretrained_weights/: https://drive.google.com/file/d/1_yvgtR5ZcWxJbMpWn4v2_Tgg4TI4d5oh/view?usp=sharing  
-<br/><br/>
 
 Put your vision model in Fast-tunerFM/  
 
