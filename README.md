@@ -1,9 +1,14 @@
 # Fast-tunerFM: An Efficient Vision-Language Fine-tuning Scheme for Medical Foundation Models
 
 ## Fine-tuning
+
+Create a new virtual in Fast-tunerFM/ and install requirements.txt
+
 Text encoder weights: Download BERT weights here and put them under Fast-tunerFM/pretrained_weights/: https://drive.google.com/file/d/1_yvgtR5ZcWxJbMpWn4v2_Tgg4TI4d5oh/view?usp=sharing  
 
 Vision encoder weights: Put your vision model in Fast-tunerFM/  
+
+Our in-house training data is private so you will need to use your own. Edit Fast-tunerFM/ImageCaptionDataset.py accordingly. __getitem__ should return a list consisting of two elements: an image (torch tensor) and a report (string).
 
 Then in the command line run:
 ```sh
