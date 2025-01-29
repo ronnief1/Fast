@@ -1,7 +1,7 @@
 # Fast-tunerFM: An Efficient Vision-Language Fine-tuning Scheme for Medical Foundation Models
 
 ## SOTA Fine-tuned weights
-If you just want the retinal FM vision weights resulting from our fine-tuning scheme:  
+If you want to skip the fine-tuning step and just want the retinal FM vision weights resulting from our fine-tuning scheme:  
 Fine-tuned weights for RETFound: https://drive.google.com/file/d/1XEkemQqEZMf_ayJPS9udlkQAzCL2HRsf/view?usp=sharing    
 Fine-tuned weights for VisionFM: https://drive.google.com/file/d/1KPxULUnhiU0IrlVuA1vy687niSkJNJdz/view?usp=sharing   
 
