@@ -6,7 +6,7 @@ Put your vision model in Fast-tunerFM/
 
 ```sh
 test
-
+```
 
 ## SOTA Fine-tuned weights
 If you just want the retinal FM vision weights after our fine-tuning scheme:
