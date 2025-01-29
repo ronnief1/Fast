@@ -1,5 +1,11 @@
 # Fast-tunerFM: An Efficient Vision-Language Fine-tuning Scheme for Medical Foundation Models
 
+## SOTA Fine-tuned weights
+If you just want the retinal FM vision weights after our fine-tuning scheme:
+Fine-tuned weights for RETFound: https://drive.google.com/file/d/1XEkemQqEZMf_ayJPS9udlkQAzCL2HRsf/view?usp=sharing    
+Fine-tuned weights for VisionFM: https://drive.google.com/file/d/1KPxULUnhiU0IrlVuA1vy687niSkJNJdz/view?usp=sharing   
+
+
 ## Fine-tuning
 
 Navigate into Fast-tunerFM/
@@ -22,10 +28,6 @@ Once your model is trained, run the following script to extract the vision backb
 python get_vision_backbone_for_linprobing.py --path_to_model models/<model name>
 ```
 
-## SOTA Fine-tuned weights
-If you just want the retinal FM vision weights after our fine-tuning scheme:
-Fine-tuned weights for RETFound: https://drive.google.com/file/d/1XEkemQqEZMf_ayJPS9udlkQAzCL2HRsf/view?usp=sharing    
-Fine-tuned weights for VisionFM: https://drive.google.com/file/d/1KPxULUnhiU0IrlVuA1vy687niSkJNJdz/view?usp=sharing   
 
 ## Downstream classification datasets
 Duke iAMD: https://people.duke.edu/~sf59/RPEDC_Ophth_2013_dataset.htm  
