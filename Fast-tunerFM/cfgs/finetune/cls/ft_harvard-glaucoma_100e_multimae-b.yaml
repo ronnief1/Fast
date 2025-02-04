@@ -22,8 +22,8 @@ nb_classes: 2
 # Data
 #
 data_set: 'image_folder'
-data_path: '/msc/home/jmoran82/FullVIBES-v2/Downstream_datasets/Harvard_Glaucoma/train'
-eval_data_path: '/msc/home/jmoran82/FullVIBES-v2/Downstream_datasets/Harvard_Glaucoma/val'
+data_path: '/path/to/data'
+eval_data_path: '/path/to/data'
 
 # Wandb logging
 log_wandb: False # Set to True to activate logging to Weights & Biases
