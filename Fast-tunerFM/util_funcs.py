@@ -264,8 +264,8 @@ def get_data_loaders(model_weights, args):
     from torch.utils.data import DataLoader
     from transforms import collate_fn
 
-    train_data = read_csv('vibes_data/no_test/train.csv', index_col=0).reset_index(drop=True)
-    val_data = read_csv('vibes_data/no_test/val.csv', index_col=0).reset_index(drop=True)
+    train_data = read_csv('path/to/data', index_col=0).reset_index(drop=True)
+    val_data = read_csv('path/to/data', index_col=0).reset_index(drop=True)
 
 
     if 'multimae' in model_weights:        
