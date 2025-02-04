@@ -31,7 +31,7 @@ python get_vision_backbone_for_linprobing.py --path_to_model models/<model name>
 
 ## Linear probing
 
-Once you have your fine-tuned model, navigate into linear_probing and set up a new virtual environment there. Then install requirements.txt.
+Once you have your fine-tuned model, navigate into linear_probing/ and set up a new virtual environment there. Then install requirements.txt.
 
 Then you can run one of the .sh scripts based on which model you have.
 
