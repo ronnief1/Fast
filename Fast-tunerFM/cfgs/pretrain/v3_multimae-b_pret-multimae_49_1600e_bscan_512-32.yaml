@@ -34,7 +34,7 @@ fp32_output_adapters: semseg
 
 # Data
 # TODO: Change me if needed
-data_path: '/raid/optima/FullVIBES-v2/'
+data_path: '/path/to/data'
 
 # Wandb logging
 log_wandb: False # Set to True to log to Weights & Biases
