@@ -6,7 +6,7 @@ from skimage import io
 from skimage import transform
 
 
-ids_fns = '/run/media/morano/SW1000/OPTIMA/Source/src/Multimodal_GA_seg_FILLY/filly_data_correct_fafs.json'
+ids_fns = 'path/to/json'
 ids_fns = Path(ids_fns)
 base_path = ids_fns.parent
 
