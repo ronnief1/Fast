@@ -3,11 +3,11 @@ import shutil
 
 
 
-dest_path = '/optima/exchange/jsanchez/multioptimae_segmentation_results/'
+dest_path = 'path/to/data'
 dest_path = Path(dest_path)
 
 
-base_path = '/mnt/Data/SSHFS/msc_server/MultiOptiMAE_torch1/output/finetune/semseg/with_val'
+base_path = 'path/to/data'
 base_path = Path(base_path)
 
 
