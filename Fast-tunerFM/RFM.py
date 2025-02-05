@@ -68,7 +68,7 @@ class RFM(nn.Module):
         super().__init__()
 
         self.vision_weights_path = vision_weights_path
-        self.cls_token_index = -1 if 'multimae' in self.vision_weights_path.lower() else 0
+        self.cls_token_index = -1 if 'multimae' in self.vision_weights_path.lower() else 0 #used for pool_video_for_contra function to get cls token. make sure you're using the right index for the cls
 
         self.vision_encoder = load_vision_backbone(self.vision_weights_path).to(device)
         self.vision_encoder.encoder_dim = 768
