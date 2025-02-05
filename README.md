@@ -31,11 +31,13 @@ python get_vision_backbone_for_linprobing.py --path_to_model models/<model name>
 
 ## Linear probing
 
-Once you have your fine-tuned model, navigate into ../linear_probing/ and set up a new virtual environment there. Then install requirements.txt.
+Once you have your fine-tuned model, navigate into ../linear_probing/, set up a new virtual environment there, and then activate it. Then install requirements.txt.
 
 Then you can run one of the .sh scripts based on which model you have.
 
 For example, in retfound.sh, you would change the ft_weights arg to _weights/<my_model_name>. Adjust the data sets arg accordingly.
+
+Results are found in _results/.
 
 ## Linear probing datasets
 Duke iAMD: https://people.duke.edu/~sf59/RPEDC_Ophth_2013_dataset.htm  
