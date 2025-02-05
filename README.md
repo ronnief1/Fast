@@ -17,7 +17,7 @@ Text encoder weights: Download BERT weights here and put them under Fast-tunerFM
 
 Vision encoder weights: Put your vision model in Fast-tunerFM/  
 
-Our in-house training data is private so you will need to use your own. Edit Fast-tunerFM/ImageCaptionDataset.py accordingly. __getitem__ should return a list consisting of two elements: an image (torch tensor) and a report (string).
+Our in-house image-text training data is private so you will need to use your own. Edit Fast-tunerFM/ImageCaptionDataset.py accordingly. __getitem__ should return a list consisting of two elements: an image (torch tensor) and a report (string).
 
 Then in the command line run:
 ```sh
