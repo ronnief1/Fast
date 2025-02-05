@@ -21,7 +21,7 @@ Our in-house image-text training data is private so you will need to use your ow
 
 Then in the command line run:
 ```sh
-python train.py --model_weights path/to/visionmodel
+python train.py --model_weights path/to/yourvisionmodel
 ```
 
 Once your model is trained, run the following script to extract the vision backbone. This will save it under linear_probing/_weights. Note this has only been tested on RETFound, VisionFM, Uni4Eye++, and our in-house MAE. You may need to alter it for another FM.
